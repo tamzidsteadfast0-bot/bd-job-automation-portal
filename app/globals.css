@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; }
+body { margin: 0; background: #f5f7fb; color: #182230; font-family: Arial, Helvetica, sans-serif; }
+a { color: inherit; }
+.shell { max-width: 1180px; margin: 0 auto; padding: 28px 20px 60px; }
+.topbar { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:28px; }
+.brand { font-size: 22px; font-weight: 800; letter-spacing:-.4px; }
+.brand span { color:#147d64; }
+.pill { border:1px solid #dbe3ec; background:white; padding:8px 12px; border-radius:999px; font-size:12px; color:#536174; }
+.hero { background:linear-gradient(120deg,#103f39,#167c67); color:white; padding:28px; border-radius:20px; display:flex; justify-content:space-between; gap:22px; align-items:center; }
+.hero h1 { margin:0 0 10px; font-size:clamp(25px,4vw,36px); }
+.hero p { margin:0; color:#d5eee8; line-height:1.6; max-width:620px; }
+.heroMark { font-size:52px; opacity:.95; }
+.stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; margin:18px 0 26px; }
+.stat,.panel,.job { background:white; border:1px solid #e5eaf0; border-radius:15px; padding:18px; }
+.stat small { color:#657386; display:block; margin-bottom:9px; }
+.stat strong { font-size:26px; }
+.sectionTitle { display:flex; align-items:center; justify-content:space-between; gap:12px; margin:26px 0 12px; }
+.sectionTitle h2 { font-size:19px; margin:0; }
+.muted { color:#657386; font-size:13px; line-height:1.5; }
+.jobs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.job h3 { font-size:17px; margin:12px 0 6px; }
+.job p { margin:4px 0; }
+.tags { display:flex; gap:7px; flex-wrap:wrap; margin:12px 0; }
+.tag { background:#e9f7f2; color:#12644f; border-radius:999px; padding:5px 9px; font-size:11px; }
+.btn { display:inline-block; border:0; border-radius:9px; padding:10px 13px; background:#147d64; color:white; font-weight:700; font-size:13px; text-decoration:none; cursor:pointer; }
+.btn.secondary { background:#f1f5f9; color:#273449; border:1px solid #dce4ec; }
+.workflow { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.step { padding:16px; background:white; border:1px solid #e5eaf0; border-radius:14px; }
+.step b { display:block; margin:8px 0; }
+.footer { color:#738094; font-size:12px; margin-top:28px; text-align:center; }
+@media(max-width:760px) { .stats{grid-template-columns:repeat(2,minmax(0,1fr));}.jobs{grid-template-columns:1fr}.workflow{grid-template-columns:1fr}.heroMark{display:none}.shell{padding:18px 14px 40px} }
